@@ -11,9 +11,7 @@ public class GenericMetal
   public Bronze bronze() { return new Bronze(); }
 
   public Iron iron() { return new Iron(); }
-
-  public Steel steel() { return new Steel(); }
-
+  
   public void about()
   {
     System.out.println("--==    GenericMetals 0.1    ==--");
