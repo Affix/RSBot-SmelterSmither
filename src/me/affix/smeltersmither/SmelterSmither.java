@@ -5,6 +5,7 @@ import org.powerbot.script.Script;
 import org.powerbot.script.rt6.ClientContext;
 
 import me.affix.metals.*;
+import me.affix.utils.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,12 +20,10 @@ public class SmelterSmither extends PollingScript<ClientContext>  {
 
   @Override
   public void start() {
-    /* Implement Tast List */
+    taskList.addAll(Arrays.asList(new BankOpener(ctx),
+                                  new ItemDepositor(ctx)));
+
     GenericMetal metal = new GenericMetal();
-    metal.about();
-    metal.bronze();
-    metal.iron();
-    metal.steel();
   }
 
   @Override

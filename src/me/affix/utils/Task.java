@@ -1,4 +1,4 @@
-package me.affix.smeltersmither;
+package me.affix.utils;
 
 import org.powerbot.script.ClientAccessor;
 import org.powerbot.script.ClientContext;
